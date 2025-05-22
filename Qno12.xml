@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<patient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="patient.xsd">
+  <name>
+    <first>John</first>
+    <middle>Robert</middle>
+    <last>Smith</last>
+  </name>
+  <patient_number>12345</patient_number>
+  <doctor>Dr. Williams</doctor>
+  <diseases>
+    <disease>Hypertension</disease>
+    <disease>Diabetes</disease>
+  </diseases>
+  <consultation_charge>1500</consultation_charge>
+  <lab_tests>
+    <test>Blood Sugar</test>
+    <test>Cholesterol</test>
+  </lab_tests>
+</patient>

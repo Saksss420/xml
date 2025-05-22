@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student rollno="S101">
+        <name>
+            <firstname>John</firstname>
+            <middlename>Michael</middlename>
+            <lastname>Doe</lastname>
+        </name>
+        <email>john.doe@email.com</email>
+        <phone>9812345678</phone>
+        <address type="permanent">123 Main Street, Cityville</address>
+        <dob type="AD">2000-06-15</dob>
+    </student>
+
+    <student rollno="S102">
+        <name>
+            <firstname>Ravi</firstname>
+            <middlename>Kumar</middlename>
+            <lastname>Shrestha</lastname>
+        </name>
+        <email>ravi.shrestha@email.org</email>
+        <phone>9801234567</phone>
+        <address type="permanent">789 Hill Road, Mountainview</address>
+        <address type="temporary">Room 12, Hostel A</address>
+        <dob type="AD">1999-11-01</dob>
+    </student>
+</students>

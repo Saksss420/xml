@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="#stylesheet"?>
+<bookstore>
+    <title>Book List</title>
+    <books>
+        <book>
+            <title>Web Programming</title>
+            <author>Chrisbates</author>
+            <publisher>Wiley</publisher>
+            <edition>3</edition>
+            <price>300</price>
+        </book>
+        <book>
+            <title>Internet world-wide-web</title>
+            <author>Ditel</author>
+            <publisher>Pearson</publisher>
+            <edition>3</edition>
+            <price>400</price>
+        </book>
+        <book>
+            <title>Computer Networks</title>
+            <author>Foruouzan</author>
+            <publisher>Mc Graw Hill</publisher>
+            <edition>5</edition>
+            <price>700</price>
+        </book>
+        <book>
+            <title>DBMS Concepts</title>
+            <author>Navath</author>
+            <publisher>Oxford</publisher>
+            <edition>5</edition>
+            <price>600</price>
+        </book>
+        <book>
+            <title>Linux Programming</title>
+            <author>Subhitab Das</author>
+            <publisher>Oxford</publisher>
+            <edition>8</edition>
+            <price>300</price>
+        </book>
+    </books>
+
+    <xsl:stylesheet id="stylesheet" version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output method="html" indent="yes"/>
+        <xsl:template match="/">
+            <html>
+                <head>
+                    <title>Book List</title>
+                    <style>
+                        body { font-family: Arial, sans-serif; margin: 20px; }
+                        h1 { text-align: center; }
+                        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+                        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                        th { background-color: #f2f2f2; }
+                        tr:nth-child(even) { background-color: #f9f9f9; }
+                    </style>
+                </head>
+                <body>
+                    <h1><xsl:value-of select="bookstore/title"/></h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Publisher</th>
+                                <th>Edition</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <xsl:for-each select="bookstore/books/book">
+                                <tr>
+                                    <td><xsl:value-of select="title"/></td>
+                                    <td><xsl:value-of select="author"/></td>
+                                    <td><xsl:value-of select="publisher"/></td>
+                                    <td><xsl:value-of select="edition"/></td>
+                                    <td><xsl:value-of select="price"/></td>
+                                </tr>
+                            </xsl:for-each>
+                        </tbody>
+                    </table>
+                </body>
+            </html>
+        </xsl:template>
+    </xsl:stylesheet>
+</bookstore>

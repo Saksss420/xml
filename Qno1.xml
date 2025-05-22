@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library>
+    <Book>
+        <Title>Learning XML</Title>
+        <Author>John Smith</Author>
+        <ISBN>978-0-12345-678-9</ISBN>
+        <Publisher>Tech Books Publishing</Publisher>
+        <Edition>2nd</Edition>
+        <Price>39.99</Price>
+    </Book>
+</Library>

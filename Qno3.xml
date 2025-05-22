@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<songs>
+    <song>
+        <name>Shape of You</name>
+        <singer>Ed Sheeran</singer>
+        <composedBy>Ed Sheeran</composedBy>
+        <length>3:53</length>
+    </song>
+    <song>
+        <name>Blinding Lights</name>
+        <singer>The Weeknd</singer>
+        <composedBy>Abel Tesfaye</composedBy>   
+        <length>3:20</length>
+    </song>
+    <song>
+        <name>Someone Like You</name>
+        <singer>Adele</singer>
+        <composedBy>Adele</composedBy>
+        <length>4:45</length>
+    </song>
+    <song>
+        <name>Bohemian Rhapsody</name>
+        <singer>Queen</singer>
+        <composedBy>Freddie Mercury</composedBy>
+        <length>5:55</length>
+    </song>
+</songs>

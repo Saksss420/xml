@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="Qno16.xsd">
+  <product>
+    <produchname>TV</produchname>
+    <category>Electronics</category>
+    <price>999</price>
+    <quantity>15</quantity>
+  </product>
+  <product>
+    <produchname>Book</produchname>
+    <category>Stationery</category>
+    <price>20</price>
+    <quantity>5</quantity>
+  </product>
+</products>

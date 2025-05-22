@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="Qno15.xsd">
+  <employee>
+    <post>Manager</post>
+    <salary>35000</salary>
+    <gender>male</gender>
+    <username>john_doe123</username>
+    <password>Abcdefg2</password>
+  </employee>
+  <employee>
+    <post>Dev</post>
+    <salary>40000</salary>
+    <gender>female</gender>
+    <username>jane_smith</username>
+    <password>Zyxwvut1</password>  
+  </employee>
+</employees>

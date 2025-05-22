@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="#stylesheet"?>
+<content>
+    <heading>Hello Everyone! Welcome to XML to CSS</heading>
+    <section>
+        <title>Algo</title>
+        <item>Greeny Algo</item>
+        <item>Randomized Algo</item>
+        <item>Searching Algo</item>
+        <item>Sorting Algo</item>
+    </section>
+    <section>
+        <title>Data Structures</title>
+        <item>Array</item>
+        <item>Stack</item>
+        <item>Queue</item>
+        <item>Linked List</item>
+    </section>
+    <section>
+        <title>Web Technology</title>
+        <item>HTML</item>
+        <item>Java Script</item>
+        <item>Php</item>
+    </section>
+    <section>
+        <title>Languages</title>
+        <item>C/C++</item>
+        <item>Python</item>
+        <item>Ruby</item>
+    </section>
+    <section>
+        <title>DBMS</title>
+        <item>BStream</item>
+        <item>EID Diagram</item>
+        <item>Normalization</item>
+        <item>Transaction Concepts</item>
+    </section>
+
+    <xsl:stylesheet id="stylesheet" version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output method="html" omit-xml-declaration="yes" indent="yes"/>
+        
+        <xsl:template match="/">
+            <html>
+                <head>
+                    <style type="text/css">
+                        body {
+                            font-family: Arial, sans-serif;
+                            white-space: pre;
+                            margin: 20px;
+                        }
+                        .heading {
+                            font-weight: bold;
+                            font-size: 1.2em;
+                            margin-bottom: 20px;
+                        }
+                        .section-title {
+                            font-weight: bold;
+                            margin: 10px 0 5px 0;
+                        }
+                        .item {
+                            margin-left: 20px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="heading"><xsl:value-of select="content/heading"/></div>
+                    
+                    <xsl:for-each select="content/section">
+                        <div class="section-title"><xsl:value-of select="title"/></div>
+                        
+                        <xsl:for-each select="item">
+                            <div class="item"><xsl:value-of select="."/></div>
+                        </xsl:for-each>
+                    </xsl:for-each>
+                </body>
+            </html>
+        </xsl:template>
+    </xsl:stylesheet>
+</content>

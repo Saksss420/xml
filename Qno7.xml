@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE movies [
+    <!ELEMENT movies (Movie+)>
+    <!ELEMENT Movie (title, year, _director, (comment | newcomment)+)>
+    <!ATTLIST Movie id ID #REQUIRED>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ELEMENT _director (#PCDATA)>
+    <!ATTLIST _director name CDATA #IMPLIED>
+    <!ELEMENT comment (#PCDATA)>
+    <!ELEMENT newcomment (#PCDATA)>
+    <!ATTLIST comment lang CDATA #IMPLIED>
+]>
+<movies>
+    <Movie id="M001">
+        <title>Inception</title>
+        <year>2010</year>
+        <_director name="Christopher Nolan">Christopher Nolan</_director>
+        <comment lang="en">Great movie with complex narrative!</comment>
+        <newcomment>Mind-bending visual effects!</newcomment>
+    </Movie>
+    
+    <Movie id="M002">
+        <title>The Matrix</title>
+        <year>1999</year>
+        <_director name="The Wachowskis">The Wachowskis</_director>
+        <comment lang="en">A revolutionary sci-fi film.</comment>
+        <comment lang="fr">Un film de science-fiction révolutionnaire.</comment>
+    </Movie>
+
+    <Movie id="M003">
+        <title>Interstellar</title>
+        <year>2014</year>
+        <_director name="Christopher Nolan">Christopher Nolan</_director>
+        <newcomment>Incredible space exploration themes.</newcomment>
+        <newcomment>Amazing soundtrack by Hans Zimmer.</newcomment>
+    </Movie>
+</movies>

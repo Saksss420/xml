@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university>
+    <school schoolId="SCH101">
+        <name>School of Engineering</name>
+        <location>Main Campus, Block A</location>
+
+        <staff staffId="STF001">
+            <name>Dr. Anil Kumar</name>
+            <title>Professor</title>
+            <category>academic</category>
+            <address>
+                <street>123 University Road</street>
+                <suburb>Cityville</suburb>
+                <postcode>12345</postcode>
+            </address>
+        </staff>
+
+        <staff staffId="STF002">
+            <name>Meera Sharma</name>
+            <title></title>
+            <category>technical</category>
+            <address>
+                <street>456 Tech Street</street>
+                <suburb>Townsville</suburb>
+                <postcode>23456</postcode>
+            </address>
+            <address>
+                <street>Hostel B</street>
+                <suburb>Campus Suburb</suburb>
+                <postcode>34567</postcode>
+            </address>
+        </staff>
+
+        <subject subjectCode="ENG101">
+            <name>Introduction to Programming</name>
+            <description>Basic programming concepts in C and Python.</description>
+            <capacity>120</capacity>
+            <taughtBy>STF001</taughtBy>
+        </subject>
+
+        <subject subjectCode="ENG102">
+            <name>Hardware Fundamentals</name>
+            <description>Study of computer hardware components.</description>
+            <capacity>40</capacity>
+            <taughtBy>STF002</taughtBy>
+        </subject>
+    </school>
+
+    <school schoolId="SCH102">
+        <name>School of Management</name>
+        <location>North Campus, Block B</location>
+
+        <staff staffId="STF003">
+            <name>Ravi Thapa</name>
+            <title>Lecturer</title>
+            <category>academic</category>
+            <address>
+                <street>789 Business Rd</street>
+                <suburb>Metrotown</suburb>
+                <postcode>56789</postcode>
+            </address>
+        </staff>
+
+        <staff staffId="STF004">
+            <name>Sita Basnet</name>
+            <title>Office Assistant</title>
+            <category>general</category>
+            <address>
+                <street>321 Admin Lane</street>
+                <suburb>Centerville</suburb>
+                <postcode>67890</postcode>
+            </address>
+        </staff>
+
+        <subject subjectCode="MGT101">
+            <name>Organizational Behavior</name>
+            <description>Understanding human behavior in organizations.</description>
+            <capacity>80</capacity>
+            <taughtBy>STF003</taughtBy>
+        </subject>
+    </school>
+</university>
